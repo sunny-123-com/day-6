@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content{
+            display: none;
+            width: 105px;
+            /* border: 1px solid; */
+            cursor: pointer;
+            /* background-color: green; */
+        }
+        .content > a {
+            display: block;
+            margin:10px;
+            text-decoration: none;
+            padding: 10px;
+            text-align: center;
+            background-color:white;
+            font-size: 10px;
+            /* border: 1px solid; */
+            
+              }
+        .but{
+            background-color: aliceblue;
+            border: 0;
+            cursor: pointer;
+
+        }
+        .but:hover + .content{
+            /* background-color: gray; */
+            display: block;
+            border: 2px solid;
+        }
+        
+        
+        /* .but:active + .content{
+            display: block;
+        } */
+        .but:focus-within + .content{
+            display: block;
+        }
+        a:hover{
+           background-color: lightblue;
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <button class="but">MY ADHAR</button>
+    <div class="content">
+        <a href="#"><b>Update Your Adhar</b></a>
+        <a href="#">Documnet Adhar Update status</a>
+        <a href="#">Update Demgraphics Data&Check status</a>
+        <a href="#">List of Supporting Documents for Adhar Enrolment&Update</a>
+        <a href="#">Adhar Enrolement& Update Charges</a>
+        <a href="#">Aghar Update History</a>
+        <a href="#">Update Adhar at Enrolement/Update center</a>
+
+    </div>
+
+    
+</body>
+</html>
